@@ -1,0 +1,8 @@
+version: "2"
+services:
+  servidor:
+    image: imagencalculadora
+  cliente:
+    image: imagenclientecalc
+    depends_on:
+      - servidor
